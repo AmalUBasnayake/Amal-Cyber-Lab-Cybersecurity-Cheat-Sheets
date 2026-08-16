@@ -391,9 +391,13 @@ amalcyberlab.vercel.app
 
 If you find these cheat sheets useful:
 
+
 ⭐ Star this repository
+
 🔄 Share it with other cybersecurity learners
+
 💬 Open an issue with suggestions
+
 📚 Use the resources for your learning journey
 
 ---
@@ -415,12 +419,19 @@ For production environments, always validate configurations against current vend
 The next stage will move beyond fundamentals into more advanced areas of:
 
 ☁️ Azure Security Engineering
+
 🔐 Identity Architecture
+
 🚨 Detection Engineering
+
 📊 Advanced Threat Hunting
+
 🌐 Cloud Security Architecture
+
 🛡️ Incident Response
+
 ⚙️ Security Automation
+
 📈 Governance & Risk
 
 > **Secure Today. Resilient Tomorrow.**
