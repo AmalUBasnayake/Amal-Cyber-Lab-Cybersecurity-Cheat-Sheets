@@ -1,58 +1,141 @@
-# 🛡️ Amal Cyber Lab — Cybersecurity Cheat Sheets
+# 🛡️ Amal Cyber Lab - Cybersecurity Cheat Sheets
 
-### Volume 1 | Microsoft Azure & Cybersecurity
+<p align="center">
+  <img src="assets/amal-cyber-lab-volume-1-banner.png" alt="Amal Cyber Lab Cybersecurity Cheat Sheets Volume 1" width="100%">
+</p>
 
-A practical collection of **12 visual cybersecurity cheat sheets** covering Microsoft Azure Security, Microsoft Security, SIEM/SOC operations, KQL, Zero Trust, MITRE ATT&CK®, and security best practices.
+<h2 align="center">Volume 1 | 12 Essential Cybersecurity References</h2>
 
-> **Learn → Build → Secure → Improve**
+<p align="center">
+  <strong>Learn • Build • Secure • Improve</strong>
+</p>
 
----
-
-## 🚀 About This Series
-
-I created this series as part of my continuous learning journey in **Cybersecurity, Microsoft Azure Security, Cloud Security, SOC Operations, and Threat Detection**.
-
-The goal was to transform important security concepts into **quick, visual, and practical reference guides** that can be useful for:
-
-* 🎓 Cybersecurity students
-* ☁️ Cloud Security learners
-* 🛡️ Security Engineers
-* 🚨 SOC Analysts
-* 🔎 Threat Hunters
-* 💻 IT Professionals
-* 📚 Microsoft Security certification candidates
-
-The series focuses on understanding security concepts rather than simply memorizing terminology.
+<p align="center">
+  Microsoft Azure Security • Microsoft Security • SIEM • SOC • KQL • Zero Trust • Threat Detection
+</p>
 
 ---
 
-# 📚 Volume 1 — 12 Cheat Sheets
+## 🚀 About This Repository
+
+Welcome to **Amal Cyber Lab - Cybersecurity Cheat Sheets**.
+
+This repository contains a collection of **12 visual cybersecurity cheat sheets** created as part of my continuous learning journey in:
+
+* ☁️ Microsoft Azure Security
+* 🛡️ Microsoft Security
+* 🔐 Identity & Access Management
+* 🚨 SIEM & SOC Operations
+* 📊 KQL & Threat Hunting
+* 🌐 Zero Trust Architecture
+* 🎯 MITRE ATT&CK®
+* ⚡ Incident Response
+* 📈 Security Best Practices
+
+The goal is to transform complex security concepts into **clear, practical, and easy-to-reference visual resources**.
+
+> **Security knowledge becomes more valuable when you can connect the concepts, architecture, controls, detection, investigation, and response together.**
+
+---
+
+# 🏗️ End-to-End Microsoft Security Architecture
+
+The following architecture connects the major security capabilities covered throughout this collection.
+
+<p align="center">
+  <img src="assets/architecture.png" alt="End-to-End Microsoft Security Architecture" width="100%">
+</p>
+
+### 🔐 Architecture Flow
+
+```text
+Identity & Access
+       │
+       ▼
+Users / Devices
+       │
+       ▼
+Applications & Workloads
+       │
+       ▼
+Network Security
+       │
+       ├── Azure Firewall
+       ├── WAF
+       ├── NSG
+       ├── DDoS Protection
+       └── Private Endpoint
+       │
+       ▼
+Microsoft Security Stack
+       │
+       ├── Defender XDR
+       ├── Defender for Endpoint
+       ├── Defender for Office 365
+       ├── Defender for Identity
+       ├── Defender for Cloud
+       └── Microsoft Sentinel
+       │
+       ▼
+Centralized Logging & Analytics
+       │
+       ├── Log Analytics
+       ├── KQL
+       ├── Threat Intelligence
+       └── Security Telemetry
+       │
+       ▼
+SOC Operations
+       │
+       ├── Detection
+       ├── Triage
+       ├── Investigation
+       ├── Containment
+       ├── Eradication
+       └── Recovery
+       │
+       ▼
+Continuous Monitoring
+       │
+       ▼
+Threat Hunting
+       │
+       ▼
+Continuous Improvement
+```
+
+---
+
+# 📚 Volume 1 - 12 Cheat Sheets
 
 ## 01. 🔐 Azure Security Services
 
-Core Azure security services and their primary security use cases.
+A quick visual reference covering the essential security services available across Microsoft Azure.
 
-**Topics include:**
+### Key Topics
 
 * Microsoft Defender for Cloud
 * Azure Firewall
-* WAF
+* Web Application Firewall
 * DDoS Protection
-* Key Vault
+* Azure Key Vault
 * Microsoft Entra ID
-* Sentinel
-* Azure networking security
-* Identity and access controls
+* Microsoft Sentinel
+* Azure Networking Security
+* Identity & Access Controls
+* Cloud Security Architecture
 
-![Azure Security Services](assets/azure-security-services.png)
+<p align="center">
+  <img src="assets/azure-security-services.png" alt="Azure Security Services Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 02. 🛡️ Microsoft Defender XDR
 
-A visual reference covering Microsoft's extended detection and response ecosystem.
+A visual reference to Microsoft's extended detection and response ecosystem.
 
-**Topics include:**
+### Key Topics
 
 * Defender for Endpoint
 * Defender for Office 365
@@ -60,10 +143,13 @@ A visual reference covering Microsoft's extended detection and response ecosyste
 * Defender for Cloud Apps
 * Microsoft Defender XDR
 * Advanced Hunting
-* Incident investigation
-* Automated response
+* Incident Investigation
+* Threat Detection
+* Automated Response
 
-![Microsoft Defender XDR](assets/microsoft-defender-xdr.png)
+<p align="center">
+  <img src="assets/microsoft-defender-xdr.png" alt="Microsoft Defender XDR Cheat Sheet" width="100%">
+</p>
 
 ---
 
@@ -71,11 +157,11 @@ A visual reference covering Microsoft's extended detection and response ecosyste
 
 Essential Azure networking security services and concepts.
 
-**Topics include:**
+### Key Topics
 
 * Network Security Groups
 * Azure Firewall
-* WAF
+* Azure WAF
 * DDoS Protection
 * Azure Bastion
 * VPN Gateway
@@ -83,33 +169,38 @@ Essential Azure networking security services and concepts.
 * Private Endpoint
 * Service Endpoint
 * Application Gateway
-* UDR
+* User Defined Routes
 * Azure DNS Private Resolver
 
-![Azure Networking Security](assets/azure-networking-security.png)
+<p align="center">
+  <img src="assets/azure-networking-security.png" alt="Azure Networking Security Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 04. 🔑 Microsoft Entra ID
 
-Identity and access management fundamentals for Microsoft cloud environments.
+A practical identity and access management reference for Microsoft cloud environments.
 
-**Topics include:**
+### Key Topics
 
 * Users & Groups
-* Authentication
+* Authentication Methods
 * Conditional Access
 * MFA
-* PIM
+* Privileged Identity Management
 * Administrative Roles
 * Application Registrations
 * Enterprise Applications
 * Identity Protection
+* Hybrid Identity
 * Access Reviews
 * Audit & Sign-in Logs
 * Zero Trust
 
-![Microsoft Entra ID](assets/microsoft-entra-id.png)
+<p align="center">
+  <img src="assets/microsoft-entra-id.png" alt="Microsoft Entra ID Cheat Sheet" width="100%">
+</p>
 
 ---
 
@@ -117,7 +208,7 @@ Identity and access management fundamentals for Microsoft cloud environments.
 
 A practical reference for Microsoft's cloud-native SIEM and SOAR platform.
 
-**Topics include:**
+### Key Topics
 
 * Log Analytics Workspace
 * Data Connectors
@@ -132,19 +223,21 @@ A practical reference for Microsoft's cloud-native SIEM and SOAR platform.
 * Automation
 * RBAC
 
-![Microsoft Sentinel](assets/microsoft-sentinel.png)
+<p align="center">
+  <img src="assets/microsoft-sentinel.png" alt="Microsoft Sentinel Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 06. 📊 KQL Advanced Queries
 
-A quick reference for advanced Kusto Query Language techniques used in security analytics and threat hunting.
+A quick reference for Kusto Query Language techniques used for security analytics and threat hunting.
 
-**Topics include:**
+### Key Topics
 
 * `where`
-* `summarize`
 * `project`
+* `summarize`
 * `extend`
 * `join`
 * `union`
@@ -154,38 +247,42 @@ A quick reference for advanced Kusto Query Language techniques used in security 
 * Time-based analysis
 * Aggregation
 * Regex
-* Threat hunting techniques
+* Threat Hunting
 
-![KQL Advanced Queries](assets/kql-advanced-queries.png)
+<p align="center">
+  <img src="assets/kql-advanced-queries.png" alt="KQL Advanced Queries Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 07. ☁️ Microsoft Defender for Cloud
 
-Cloud security posture management and workload protection concepts.
+A visual reference covering cloud security posture management and workload protection.
 
-**Topics include:**
+### Key Topics
 
 * CSPM
 * CWPP
 * Security Recommendations
 * Vulnerability Management
-* Compliance
+* Compliance Management
 * Threat Detection
-* Multi-cloud Security
+* Multi-Cloud Security
 * JIT VM Access
 * Security Posture
 * Defender Plans
 
-![Microsoft Defender for Cloud](assets/microsoft-defender-for-cloud.png)
+<p align="center">
+  <img src="assets/microsoft-defender-for-cloud.png" alt="Microsoft Defender for Cloud Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 08. 🔥 Azure Firewall Deep Dive
 
-A deeper reference for Azure Firewall architecture, traffic inspection, and centralized network security.
+A deeper reference covering Azure Firewall architecture and centralized network security.
 
-**Topics include:**
+### Key Topics
 
 * Azure Firewall Architecture
 * Hub-and-Spoke
@@ -193,72 +290,99 @@ A deeper reference for Azure Firewall architecture, traffic inspection, and cent
 * Network Rules
 * Application Rules
 * Threat Intelligence
-* DNAT / SNAT
-* Routing
+* DNAT & SNAT
+* Routing & Traffic Flow
 * Availability Zones
 * Monitoring & Logging
 * Hybrid Connectivity
-* Best Practices
+* Security Best Practices
 
-![Azure Firewall Deep Dive](assets/azure-firewall-deep-dive.png)
+<p align="center">
+  <img src="assets/azure-firewall-deep-dive.png" alt="Azure Firewall Deep Dive Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 09. 🌐 Zero Trust Architecture
 
-A practical visual reference for implementing the Zero Trust security model.
+A practical visual guide to modern Zero Trust security architecture.
 
-### Core principles
+### Core Principles
 
-> **Verify Explicitly → Use Least Privilege → Assume Breach**
+> **Verify Explicitly • Use Least Privilege • Assume Breach**
 
-**Topics include:**
+### Key Topics
 
-* Identity
-* Devices
-* Applications
-* Data
-* Network
-* Visibility
+* Identity Security
+* Device Trust
+* Network Security
+* Application Security
+* Data Protection
+* Visibility & Analytics
 * Policy Enforcement
 * Threat Protection
-* RBAC / PIM
+* RBAC
+* PIM
 * Conditional Access
 * Zero Trust Maturity
 
-![Zero Trust Architecture](assets/zero-trust-architecture.png)
+<p align="center">
+  <img src="assets/zero-trust-architecture.png" alt="Zero Trust Architecture Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 10. ⚡ SOC Analyst Playbook
 
-A practical reference for Security Operations Center workflows.
+A practical reference for Security Operations Center workflows and incident response.
 
 ### Incident Response Lifecycle
 
-**Detect → Triage → Investigate → Contain → Eradicate → Recover → Document → Communicate**
+```text
+Detect
+  ↓
+Triage
+  ↓
+Investigate
+  ↓
+Contain
+  ↓
+Eradicate
+  ↓
+Recover
+  ↓
+Document
+  ↓
+Communicate
+  ↓
+Improve
+```
 
-**Topics include:**
+### Key Topics
 
+* Alert Detection
 * Alert Triage
 * Incident Investigation
+* Evidence Collection
 * Threat Hunting
 * Incident Prioritization
 * Escalation
 * KQL
 * Common Alert Sources
-* Analyst Best Practices
+* SOC Best Practices
 * SOC KPIs
 
-![SOC Analyst Playbook](assets/soc-analyst-playbook.png)
+<p align="center">
+  <img src="assets/soc-analyst-playbook.png" alt="SOC Analyst Playbook Cheat Sheet" width="100%">
+</p>
 
 ---
 
 ## 11. 🛡️ MITRE ATT&CK®
 
-A visual reference for understanding real-world adversary behavior.
+A practical visual reference for understanding real-world adversary behavior.
 
-**Topics include:**
+### Key Topics
 
 * Tactics
 * Techniques
@@ -271,10 +395,31 @@ A visual reference for understanding real-world adversary behavior.
 * Threat Hunting
 * Incident Response
 * Security Coverage
+* Adversary Behavior
 
-MITRE ATT&CK® helps security teams understand **why and how adversaries operate** and provides a common language for mapping defensive capabilities.
+### ATT&CK Perspective
 
-![MITRE ATT\&CK](assets/mitre-attack.png)
+```text
+Why?
+  ↓
+Tactic
+  ↓
+How?
+  ↓
+Technique
+  ↓
+More Detail
+  ↓
+Sub-Technique
+  ↓
+Real-World Example
+  ↓
+Procedure
+```
+
+<p align="center">
+  <img src="assets/mitre-attack.png" alt="MITRE ATT&CK Cheat Sheet" width="100%">
+</p>
 
 ---
 
@@ -282,7 +427,7 @@ MITRE ATT&CK® helps security teams understand **why and how adversaries operate
 
 The final cheat sheet of Volume 1 brings together practical security principles across the Microsoft security ecosystem.
 
-**Topics include:**
+### Key Topics
 
 * Identity Security
 * Device Security
@@ -291,20 +436,22 @@ The final cheat sheet of Volume 1 brings together practical security principles 
 * Infrastructure Security
 * Threat Protection
 * Security Operations
-* Governance & Compliance
+* Compliance & Governance
 * Business Continuity
 * Security Culture
 * Zero Trust
 * Security KPIs
 * Risk Mitigation
 
-![Microsoft Security Best Practices](assets/microsoft-security-best-practices.png)
+<p align="center">
+  <img src="assets/microsoft-security-best-practices.png" alt="Microsoft Security Best Practices Cheat Sheet" width="100%">
+</p>
 
 ---
 
 # 🧭 Series Roadmap
 
-| #  | Topic                             | Status |
+| #  | Cheat Sheet                       | Status |
 | -- | --------------------------------- | ------ |
 | 01 | Azure Security Services           | ✅      |
 | 02 | Microsoft Defender XDR            | ✅      |
@@ -319,121 +466,195 @@ The final cheat sheet of Volume 1 brings together practical security principles 
 | 11 | MITRE ATT&CK®                     | ✅      |
 | 12 | Microsoft Security Best Practices | ✅      |
 
----
+### 🎉 Volume 1 — Complete
 
-# 🎯 What I Learned
-
-Building these resources helped me strengthen my understanding of:
-
-* 🔐 Identity & Access Management
-* ☁️ Azure Cloud Security
-* 🌐 Network Security
-* 🚨 SIEM & SOAR
-* 📊 KQL & Threat Hunting
-* 🛡️ XDR & Threat Detection
-* 🎯 MITRE ATT&CK®
-* 🌐 Zero Trust
-* ⚡ SOC Operations
-* 📈 Security Governance & Best Practices
-
-More importantly, this series reinforced the idea that **security services should not be learned in isolation**.
-
-Identity, networking, detection, monitoring, governance, and response all work together to build a resilient security architecture.
+**12 Cheat Sheets • One Complete Collection**
 
 ---
 
-# 🧪 Learning Approach
+# 🧠 What This Series Reinforced
 
-This repository is part of my **hands-on cybersecurity learning journey**.
+Building this collection helped me connect multiple areas of cybersecurity instead of learning them as isolated technologies.
 
-I combine:
+### 🔐 Identity
 
-**Concepts → Labs → Architecture → Detection → Investigation → Evidence → Documentation**
+Microsoft Entra ID → MFA → Conditional Access → PIM → Zero Trust
 
-The cheat sheets are designed as quick references, while the practical implementation is explored through hands-on cybersecurity labs and projects.
+### 🌐 Network
+
+NSG → Azure Firewall → WAF → DDoS → Private Endpoint → Secure Architecture
+
+### 🚨 Detection
+
+Microsoft Defender → Sentinel → KQL → Threat Intelligence → Analytics Rules
+
+### ⚡ Response
+
+Detection → Triage → Investigation → Containment → Eradication → Recovery
+
+### 🎯 Adversary Understanding
+
+Threat Intelligence → MITRE ATT&CK® → Threat Hunting → Detection Engineering
+
+### 📈 Governance
+
+Security Controls → Compliance → Monitoring → Metrics → Continuous Improvement
+
+---
+
+# 🧪 Learning Methodology
+
+These cheat sheets are part of a broader hands-on learning approach:
+
+```text
+CONCEPT
+   ↓
+ARCHITECTURE
+   ↓
+IMPLEMENTATION
+   ↓
+HANDS-ON LAB
+   ↓
+DETECTION
+   ↓
+INVESTIGATION
+   ↓
+EVIDENCE
+   ↓
+DOCUMENTATION
+   ↓
+IMPROVEMENT
+```
+
+The objective is not simply to memorize security services.
+
+The objective is to understand:
+
+> **Why the control exists → What risk it addresses → How it is implemented → What evidence it produces → How it is monitored → How it is improved.**
+
+---
+
+# 🛠️ Technologies Covered
+
+### Microsoft Azure
+
+* Azure Firewall
+* Azure WAF
+* Azure DDoS Protection
+* Azure Bastion
+* Azure VPN Gateway
+* ExpressRoute
+* Private Endpoint
+* NSG
+* Azure Key Vault
+* Azure Monitor
+
+### Microsoft Security
+
+* Microsoft Entra ID
+* Microsoft Defender XDR
+* Defender for Endpoint
+* Defender for Office 365
+* Defender for Identity
+* Defender for Cloud Apps
+* Microsoft Defender for Cloud
+* Microsoft Sentinel
+* Microsoft Intune
+* Microsoft Purview
+
+### Security Operations
+
+* SIEM
+* SOAR
+* KQL
+* Threat Hunting
+* Incident Response
+* Detection Engineering
+* MITRE ATT&CK®
+* Threat Intelligence
 
 ---
 
 # 👨‍💻 About the Author
 
-### Amal Udayanga Basnayake
+## Amal Udayanga Basnayake
 
 **IT & Systems Specialist | Cybersecurity | Azure Security**
 
-Focused on:
+Focused on building practical expertise in:
 
-* Microsoft Azure Security
-* Microsoft 365 Security
-* Microsoft Sentinel
-* SIEM & SOAR
-* Threat Detection
-* Cloud Security
-* Identity & Access Management
-* Zero Trust
-* Security Operations
-
----
-
-## 🌐 Connect With Me
-
-🔗 **LinkedIn**
-linkedin.com/in/amal-udayanga-basnayake
-
-💻 **GitHub**
-github.com/AmalUBasnayake
-
-🌐 **Portfolio**
-amalcyberlab.vercel.app
+* ☁️ Azure Security
+* 🛡️ Microsoft Security
+* 🚨 SIEM & SOC Operations
+* 📊 KQL & Threat Detection
+* 🔐 Identity & Access Management
+* 🌐 Zero Trust
+* ⚡ Security Automation
+* 🏗️ Cloud Security Architecture
 
 ---
 
-# ⭐ Support the Project
+# 🌐 Connect With Me
 
-If you find these cheat sheets useful:
+<p align="center">
 
+<a href="https://www.linkedin.com/in/amal-udayanga-basnayake">
+<img src="https://img.shields.io/badge/LinkedIn-Amal%20Udayanga%20Basnayake-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
 
-⭐ Star this repository
+<a href="https://github.com/AmalUBasnayake">
+<img src="https://img.shields.io/badge/GitHub-AmalUBasnayake-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
-🔄 Share it with other cybersecurity learners
+<a href="https://amalcyberlab.vercel.app">
+<img src="https://img.shields.io/badge/Portfolio-Amal%20Cyber%20Lab-00A4EF?style=for-the-badge&logo=microsoftazure&logoColor=white">
+</a>
 
-💬 Open an issue with suggestions
-
-📚 Use the resources for your learning journey
+</p>
 
 ---
 
-## ⚠️ Disclaimer
+# ⭐ Support This Project
+
+If you find these resources useful:
+
+⭐ **Star this repository**
+
+🔄 **Share it with other cybersecurity learners**
+
+💬 **Open an issue with suggestions**
+
+📚 **Use the cheat sheets as learning references**
+
+---
+
+# ⚠️ Disclaimer
 
 These cheat sheets are created for **educational and reference purposes**.
 
-They are intended to support learning and should not replace official Microsoft documentation, security policies, organizational standards, or professional security guidance.
+They are not intended to replace official Microsoft documentation, vendor guidance, organizational security policies, or professional security advice.
 
-For production environments, always validate configurations against current vendor documentation and your organization's security requirements.
+Cloud security services, features, pricing, licensing, and capabilities can change over time.
+
+Always validate production implementations against the latest official documentation and your organization's security requirements.
 
 ---
 
 # 🚀 What's Next?
 
-**Volume 1 is complete.**
+## Volume 1 is complete.
 
-The next stage will move beyond fundamentals into more advanced areas of:
+The next stage of the **Amal Cyber Lab** journey will move deeper into:
 
 ☁️ Azure Security Engineering
-
 🔐 Identity Architecture
-
 🚨 Detection Engineering
-
 📊 Advanced Threat Hunting
-
-🌐 Cloud Security Architecture
-
+🏗️ Cloud Security Architecture
+⚡ Security Automation
 🛡️ Incident Response
-
-⚙️ Security Automation
-
 📈 Governance & Risk
 
 > **Secure Today. Resilient Tomorrow.**
 >
-> — Amal Cyber Lab 🛡️
+> **— Amal Cyber Lab**
